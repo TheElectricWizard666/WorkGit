@@ -1,12 +1,11 @@
-﻿# Script for uploading files to IBEX FTP-Server.
-# It is a part of LOBOS-IBEX Interface.
+﻿# Script for uploading files to FTP-Server.
 # Date: 07.11.2017
 # Author: SOR
 
 $Source="C:/Dir"    
-$ftp = "ftp://ftp.ibexfusion.ch" 
-$user = "306493-lobosgeratrium" 
-$pass = "wu5rSu1epj.w"  
+$ftp = "ftp://..." 
+$user = "..." 
+$pass = "..."  
  
 $webclient = New-Object System.Net.WebClient 
  
