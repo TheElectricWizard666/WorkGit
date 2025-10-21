@@ -1,0 +1,1 @@
+﻿(Get-VpnConnection).where{$_.Name -like "*Uster*" -and $_.ConnectionStatus -eq "disConnected"}

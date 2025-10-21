@@ -1,0 +1,2 @@
+﻿$BackupFolder = "H:\Documents\_CompInfo"
+Get-WMIObject Win32_LogicalDisk | Format-Table -Property name,volumename,providername,size,freespace -AutoSize -Wrap | Out-File -Encoding Ascii $BackupFolder\disk_info.txt

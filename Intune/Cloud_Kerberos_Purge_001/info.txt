@@ -1,0 +1,21 @@
+Install:
+
+Script Wrapper Example:
+Deploy-Application.EXE -DeploymentType "Install" -DeployMode "NonInteractive" -AllowRebootPassThru
+Deploy-Application.EXE -DeploymentType "Install" -DeployMode "Interactive" -AllowRebootPassThru
+
+Native Example:
+msiexec /i "[FileName].msi" TRANSFORMS="[FileName].mst" /L*V "%SYSTEMROOT%\Logs\[Vendor] [AppName] [Version] [Architecture].log" /q
+
+
+Uninstall:
+
+Script Wrapper Example:
+Deploy-Application.EXE -DeploymentType "Uninstall" -DeployMode "NonInteractive" -AllowRebootPassThru
+Deploy-Application.EXE -DeploymentType "Uninstall" -DeployMode "Interactive" -AllowRebootPassThru
+
+Native Example:
+msiexec /x [{GUID}] /q
+
+
+[Optional Information]:
